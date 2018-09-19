@@ -1,0 +1,1 @@
+define sm = DynamicCharacter('sm_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")

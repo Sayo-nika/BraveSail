@@ -15,6 +15,7 @@ label start:
     $ m_name = "Monika"
     $ n_name = "Natsuki"
     $ y_name = "Yuri"
+    $ sm_name = "Sayonika"
 
     $ quick_menu = True
     $ style.say_dialogue = style.normal
@@ -23,10 +24,12 @@ label start:
     $ config.allow_skipping = True
 
 
-    if persistent.example_seen:
-        call tutorial_selection
+    if persistent.playthrough == 0:
+        call ca1
+        call ca2
     else:
-        call example_chapter from _call_example_chapter
+        # call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
+        pass
 
     return
 
