@@ -44,6 +44,7 @@ label ca2:
     "Then I spot her in the distance, panting and catching her breath just a few meters away from the bench."
     "Because I’m a smug jerk, I didn’t call her over conventionally. I gave her a phone call instead."
     "I dial."
+    show sayonika 1x zorder 3 at t11
     sm "Hey… I made it… *pant* where… are…. you…?"
     "Did she really run all the way from her home just to meet me here? I’m amazed."
     "Right behind you, m’lady~"
