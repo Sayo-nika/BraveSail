@@ -11,11 +11,14 @@ label start:
     $ _dismiss_pause = config.developer
 
     # girl names
-    $ s_name = "Sayori"
-    $ m_name = "Monika"
-    $ n_name = "Natsuki"
-    $ y_name = "Yuri"
-    $ sm_name = "Sayonika"
+    python:
+        s_name = "Sayori"
+        m_name = "Monika"
+        n_name = "Natsuki"
+        y_name = "Yuri"
+        sm_name = "Sayonika"
+        mi_name = "Mio"
+
 
     $ quick_menu = True
     $ style.say_dialogue = style.normal
@@ -27,6 +30,7 @@ label start:
     if persistent.playthrough == 0:
         call ca1
         call ca2
+        call ca3
     else:
         # call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
         pass
