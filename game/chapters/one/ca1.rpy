@@ -85,8 +85,10 @@ label ca2:
 
 label ca3:
     # TODO: Replace this with bakery background
-    scene bg residential_day
+    stop music fadeout 0.5
+    scene bg bakery
     with wipeleft
+    play music t3
     "We’ve made it to the bakery pretty quickly." 
     "Then again, Sayonika was profusely sweating and panting just to get here with me." 
     "I open the door for her as she enters sheepishly licking her lips." 
@@ -94,15 +96,19 @@ label ca3:
     
     $ n_name = "Baker"
     n "Jeez, Sayonika! Have you been running a marathon again? You're way too hyperactive even when the Angel {i}isn’t{/i} around!"
-    show natsuki 1 at t11
+    show natsuki 3be at t11
     "I perk my head up and notice Natsuki in a baker’s outfit behind the counter." 
     "Her outfit was much different to the other bakers."
-    mc "Natsuki?" 
+    mc "Natsuki?"
     $ n_name = "Natsuki"
-    n "Eh?"
+    n 2bc "Eh?"
     n "[player]! I didn’t think you'd be in this part of town! What are you here for, anyway?"
+    show natsuki at t21
+    show sayonika 2x at f22
     sm "I… *pant* brought him… here…"
     mc "I didn’t know you worked for a bakery!"
+    show natsuki 5be at f21
+    show sayonika at t22
     n "My bakery, mind you! Sayonika, if you’re going to bring Sherlock here, at least tell me first! Hmph!"
     mc "What’s that supposed to mean?"
     n "Don’t you know what it means? A-and why does it concern {i}you?!{/i}"
