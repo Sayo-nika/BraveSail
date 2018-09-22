@@ -18,6 +18,8 @@ label start:
         y_name = "Yuri"
         sm_name = "Sayonika"
         mi_name = "Mio"
+        b_name = "Baker 1"
+        b2_name = "Baker 2"
 
 
     $ quick_menu = True
@@ -28,9 +30,11 @@ label start:
 
 
     if persistent.playthrough == 0:
+        $ chapter = 1
         call ca1
         call ca2
         call ca3
+        call ca4
     else:
         # call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
         pass
