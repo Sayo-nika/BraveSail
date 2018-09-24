@@ -34,9 +34,12 @@ label start:
         call ca1
         call ca2
         call ca3
-        call ca4
+        call 
+        scene black
+        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
     else:
-        # call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
+        scene black with dissolve_scene_full
+        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
         pass
 
     return
