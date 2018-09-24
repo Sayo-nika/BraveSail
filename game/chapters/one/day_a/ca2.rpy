@@ -43,7 +43,7 @@ label ca2:
     "If I had been drinking a cup of tea and eating a packet of crumpets, I’d have spit everything out of my mouth in seconds."
     "I hadn't been informed that I’d be tagging along to this girl’s summer classes!"
     "And roommate? God can go suck a bible!"
-    "Nevertheless, if my whole summer’s gonna be spent with such a cute girl, I think that can all change."
+    "Nevertheless, I decide that if my whole summer will be spent with with such a cute girl, that my opinion can quickly change."
     mc "It’ll be fun... I suppose..."
     sm 1w "Aw... why so sad all of a sudden? Am I not that likeable?"
     "N-no...! it’s not that...!"
@@ -57,7 +57,7 @@ label ca2:
     "She fidgets a little while looking away from me."
     sm 2i "Ehehe..."
     mc "I’ll take that as a no."
-    "I wonder how in the world she was able to get here without bringing any money at all." 
+    "I wonder about how in the world she was able to get here without bringing any money at all." 
     "But I let that slip on my mind and let her lead me to a bakery." 
-    "I’m just hoping she doesn’t mistake me for a walking wallet."
+    "My hopes are high that she doesn't accidentally mistake me for her own personal ATM    ."
     return

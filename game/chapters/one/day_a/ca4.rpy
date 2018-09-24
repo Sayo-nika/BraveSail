@@ -52,22 +52,28 @@ label ca4:
         "Stay quiet.":
             $ sayonika_snitch = 0
             mc "...it's nothing. So I was just thinking, Yuri. Do you get paid?"
-            y "Yes, yes I do."
+            show yuri at f21
+            y 1bf "Yes, yes I do."
             mc "How much do they pay you?"
-            y "I'd rather not say. It's a little embarrassing."
+            y 4bb "I'd rather not say. It's a little embarrassing."
+            show yuri at t21
             mc "I understand."
             mc "Oh yeah, can I borrow a pen? I need to write down the times for the train..."
-            y "P-pen...?"
-            y "Ahah... I think you... m-meant pencil..."
+            show yuri at f21
+            y 3bn "P-pen...?"
+            y 3bq "Ahah... I think you... m-meant pencil..."
+            show yuri at t21
             mc "....."
             mc "........."
             mc "What?!"
             "It takes me a few seconds to realize my mistake."
             mc "Oh shit, I'm sorry! I didn't realise you still don't like that word!"
             mc "I'm really sorry!"
-            sm "[player]! Did you do that on purpose?!"
+            show sayonika at f22
+            sm 1p "[player]! Did you do that on purpose?!"
             mc "Look, I'm really sorry, okay?!"
             sm "Stupid!! You shouldn't do that! You're so evil!"
+            show sayonika at t22
             
             mc "...well."
             menu:
@@ -75,7 +81,8 @@ label ca4:
                     $ sayonika_snitch = 2
                     mc "I wouldn't say I'm the evil one."
                     mc "In fact! I should say that you're the evil one here."
-                    sm "Huh?! Oh, wait a minuteee! I mean you're just bonkers!... [i]he's not buying it, is he...?[/i]"
+                    show sayonika at f22
+                    sm 1u "Huh?! Oh, wait a minuteee! I mean you're just bonkers!... {i}he's not buying it, is he...?{/i}"
                     mc "Sorry, what was that? Oh yeah! I forgot to mention something, Yuri..."
                     jump sayonika_snitch_return
 
@@ -117,60 +124,105 @@ label ca4:
         pass
 
     y 1be "Ahm... apart from that, what books should I get you two?"
+    show yuri at t21
     mc "I would like... hm..."
-    y "Wait. I think I know of a book you two might like."
+    show yuri at f21
+    y 1bb "Wait. I think I know of a book you two might like."
+    show yuri at t21
     "Yuri heads towards a bookshelf and returns with two books in her hands."
-    y "[player], I know you don’t read a lot, so I thought this book might be kind of fitting for you."
+    show yuri at f21
+    y 2bf "[player], I know you don’t read a lot, so I thought this book might be kind of fitting for you."
     y "It’s a short read so it will be a little easier for you to read along."
+    show yuri at t21
     "I take a look at the book’s cover."
-    "It reads \"Go the Fuck to Sleep\" by Adam Mansbach."
+    "It reads {i}Go the Fuck to Sleep{/i} by Adam Mansbach."
     mc "Thanks Yuri. This definitely looks like a must-read for my kind.."
-    y "I’m glad."
-    y "As for you, Sayonika..."
-    y "You have to read this book about... PHP."
-    sm "PHP?"
-    y "It’s some programming language that I suppose fits you as a person so I thought why not give it a read."
-    sm "Oh... uh, thank you, Yuri!"
-    y "By the way, those are the books you will be reading this summer."
+    show yuri at f21
+    y 3bc "I’m glad."
+    y 1bb "As for you, Sayonika..."
+    y 2bj "You have to read this book about... PHP."
+    show sayonika at f22
+    show yuri at t21
+    sm 1f "PHP?"
+    show yuri at f21
+    show sayonika at t22
+    y 1bf "It’s some programming language that I suppose fits you as a person so I thought why not give it a read."
+    show sayonika at f22
+    show yuri at t21
+    sm 2i "Oh... uh, thank you, Yuri!"
+    show yuri at f21
+    show sayonika at t22
+    y 2bf "By the way, those are the books you will be reading this summer."
+    show yuri at t21
     mc "Guess I got the easy book to read then."
-    sm "Wait, whaat? No fair! Why do I have to read a 500 page textbook about a coding language while [player] gets a little book with a short story about how he can go the heck to sleep?!"
-    y "Sayonika! Shhh...!"
+    show sayonika at f22
+    sm 1v "Wait, whaat? No fair! Why do I have to read a 500 page textbook about a coding language while [player] gets a little book with a short story about how he can go the heck to sleep?!"
+    show yuri at f21
+    show sayonika at t22
+    y 2br "Sayonika! Shhh...!"
     y "This is a library! Please! Don’t you have any manners?"
-    sm "Ehehe..."
-    y "For goodness sake..."
-    y "Come on, I’m sure you already know about how dense [player] is by now."
+    show sayonika at f22
+    show yuri at t21
+    sm 1i "Ehehe..."
+    show yuri at f21
+    show sayonika at t22
+    y 3bw "For goodness sake..."
+    y 1bg "Come on, I’m sure you already know about how dense [player] is by now."
+    show yuri at t21
     mc "{i}I’m not dense! Hmph!{/i}"
     "I think I’m slowly turning into a tsundere."
-    y "Sorry, I meant you’re not familiar with reading books. I remember when you told me that novel books are your mortal enemy because they lack pictures."
-    y "What did you expect me to do? Give him a biography? Give him some geography?"
-    y "He’s too new to read something without pictures to go along with the words."
-    y "And he wouldn't possibly know how to answer the questions in Monika’s Summer Reading Test Papers if I gave him something different."
+    show yuri at f21
+    y 2bt "Sorry, I meant you’re not familiar with reading books. I remember when you told me that novel books are your mortal enemy because they lack pictures."
+    y 2br "What did you expect me to do? Give him a biography? Give him some geography?"
+    y 1bv "He’s too new to read something without pictures to go along with the words."
+    y 1bw "And he wouldn't possibly know how to answer the questions in Monika’s Summer Reading Test Papers if I gave him something different."
+    show yuri at t21
     "Are you calling me a child? Ow, my feelings..."
-    "But this doesn’t explain why I have to read a textbook while he gets to read a short story!"
+    show sayonika at f22
+    sm 2p "But this doesn’t explain why I have to read a textbook while he gets to read a short story!"
 
-    if sayonika_snitch = 0:
+    if sayonika_snitch == 0:
         sm "Is it because you think I can read this?"
-        y "If you can read books, then you can read that book on PHP!"
-        sm "Okay, I understand. You want me to read this because I'm stupid and I need more brain."
-        y "You've already nailed your first assignment from me on realising your stupidity. Good job~"
-        sm "Meanieee!"
+        show yuri at f21
+        show sayonika at t22
+        y 2br "If you can read books, then you can read that book on PHP!"
+        show sayonika at f22
+        show yuri at t21
+        sm 1o "Okay, I understand. You want me to read this because I'm stupid and I need more brain."
+        show yuri at f21
+        show sayonika at t22
+        y 1bj "You've already nailed your first assignment from me on realising your stupidity. Good job~"
+        show sayonika at f22
+        show yuri at t21
+        sm 1y "Meanieee!"
+        show sayonika at t22
         mc "Come on, you two... Sayonika, we need to find Sayori now."
-        sm "Oh yeaaah. I forgot!"
+        show sayonika at f22
+        sm 2i "Oh yeaaah. I forgot!"
         mc "What did you forget?"
-        sm "I forgot about Sayori, we still need to check on her!"
+        sm 1b "I forgot about Sayori, we still need to check on her!"
         mc "Now that I think about it... why exactly didn't you check beforehand?"
-        sm "Um... I didn't think about that."
+        sm 1i "Um... I didn't think about that."
         mc "Hello; Sayonika's Brain? This is [player] asking you to think harder!"
-        sm "Uwaaaa! I'm sorry!"
+        sm 1x "Uwaa~! I'm sorry!"
+        show sayonika at t22
         mc "I'm kidding. Let's go, then!"
-    if sayonika_snitch = 1 or 2:
-        sm "Is this revenge for the joke I made?"
-        y "What did you think? Did you think I gave it to you just because I thought you wanted to code? I already know you’re nothing like Monika!"
-        y "So take a spoonful of my medicine and see how it feels!"
-        sm "Oh... oh. Oh. W-well, now we need to find Sayori and make sure she’s going as well, even though I have a feeling everyone from the Literature Club is going, including me..."
+    if sayonika_snitch == 1 or 2:
+        sm 1j "Is this revenge for the joke I made?"
+        show yuri at f21
+        show sayonika at t22
+        y 2br "What did you think? Did you think I gave it to you just because I thought you wanted to code? I already know you’re nothing like Monika!"
+        show sayonika 1x at h22
+        y 2by7 "So take a spoonful of my medicine and see how it feels!"
+        show sayonika at f22
+        show yuri at t21
+        sm 1o "Oh... oh. Oh. W-well, now we need to find Sayori and make sure she’s going as well, even though I have a feeling everyone from the Literature Club is going, including me..."
         mc "Where could she be right now though?"
-        y "I did see her come in here to run some errands, and then left. I think she was heading... south maybe?"
+        show yuri at f21
+        show sayonika at t22
+        y 1bf "I did see her come in here to run some errands, and then left. I think she was heading... south maybe?"
         mc "Well, I guess we should go and find her then!"
+        show yuri at t21
         
     "Hmmm..."
     menu:
@@ -180,9 +232,11 @@ label ca4:
             $ slap_sayonika = False
         "Slap Sayonika before leaving.":
             "I slap Sayonika so painfully that the noise can be audibly heard throughout the huge library."
+            show sayonika 1x at h22
             sm "Uwaaaaaaaah!!"
             mc "Alright. See you later Yuri."
-            y "See you two later!"
+            show yuri at f21
+            y 1ba "See you two later!"
             $ slap_sayonika = True
 
     scene bg library_out
@@ -190,15 +244,17 @@ label ca4:
     "We walk out of the library through the glass door entrance and wave Yuri goodbye before beginning to walk down the street."
     "We stop for a moment, so I decide to say something embarrassing to her to see how she’d react. As they say, it’s better to get to know the kind of person the girl you're going to be living with for the whole summer is."
     mc "Hey... Sayonika?"
-    sm "What’s up [player]? {i}Uh oh...{/i}"
+    show sayonika 1a at t11
+    sm 1g "What’s up [player]? {i}Uh oh...{/i}"
     mc "When we get back to your place tonight... "
     mc "Can you read me the book Yuri gave me when I go to bed?"
-    sm "Uwaaa!!"
-    sm "You have to be joking... right?"
+    show sayonika at h11
+    sm 1u "Uwaaa!!"
+    sm 2o "You have to be joking... right?"
     mc "Do I look like I’m joking?"
-    sm "Eheh..."
+    sm 1i "Eheh..."
     sm "Uhmm..."
-    sm "I guess... I c-can...?"
+    sm 1o "I guess... I c-can...?"
     mc "Haha, success!"
     "I can’t believe she just agreed to read me Go the Fuck to Sleep tonight!"
     "Doing this will definitely help me find out more about who Sayonika is as a person."
@@ -206,5 +262,6 @@ label ca4:
     "I have to stretch the dough as far as it goes if I can, by showing her the book and telling her about how I’m about to ‘going the fuck to sleep’ so she can read me it."
     "I love it! It’s so devilish yet funny at the same time!"
     mc "Thanks Sayonika! You’re the greatest!"
+    show sayonika 1i at t11
     "This day just keeps on getting better and better~"
     return
