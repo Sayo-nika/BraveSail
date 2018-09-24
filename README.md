@@ -14,3 +14,6 @@ This is a mod for Doki Doki: Literature Club by Team Salvato. [All rights reserv
 Sayonika Assets licensed under Creative Commons 3.0 Non Commercial-Unported. [Check the Press Kit for LICENSE.](https://github.com/Sayo-nika/Press/blob/master/LICENSE)
 
 AliceOS is provided under the [GNU GPL v3 License by the Project Alice Team](https://github.com/TheAngelReturns/aliceos/blob/master/LICENSE).
+
+## Encountering `ACT_FAULT_IN_NONACT_AREA`?
+That's where you come in! We need _you_, the community, to write the next act. Get to it!
