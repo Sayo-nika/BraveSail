@@ -6,8 +6,8 @@ label ca3:
     play music t3
     $ b_name = "Baker 1"
     $ b2_name = "Baker 2"
-    "We’ve made it to the bakery pretty quickly." 
-    "Then again, Sayonika was profusely sweating and panting just to get here with me." 
+    "We arrive at the bakery pretty quickly." 
+    "But then again, Sayonika was profusely sweating and panting just to get here." 
     "I open the door for her as she enters sheepishly licking her lips." 
     "As she enters, myself included, I hear the baker shout towards her."
     
@@ -79,15 +79,15 @@ label ca3:
     "At one point, we were reading {i}The Illusion of Living{/i} with Yuri."
     "Before the spring break, she was a unique individual: cute, proper, charming..."
     "Completely out of my league at that time."
-    "Things got a little out of hand during spring break when we went on a trip to an animation studio."
+    "Things got a little out of hand during spring break when we went on a trip to Disney's animation studio."
     "Okay, {i}maybe{/i} that was a bit of an understatement."
     "Her personality drastically changed from a proper lady to a downright ruthless monster."
-    "I don’t know exactly why or how, but I’m pretty sure Monika or her boss knows."
+    "I don’t know exactly why or how, but I’m pretty sure Monika or her boss knows. in a matter of days."
     "I think Monika said something about it being too difficult for me to understand...?"
     "Her boss was certainly less than enthusiastic about it, and things went down."
     "I try to keep my distance, but she always seems to blatantly disregard it."
     "The only word I understood from that was monster..."
-    "I already know one monster, but she's not exactly the worst either."
+    "I already know one monster, but she's not... the right kind of monster."
     $ mi_name = "Mio"
     mi 4h "What? Are you going to sta{nw}"
     $ _history_list[-1].what = "What? Are you going to stare—"
@@ -104,7 +104,7 @@ label ca3:
     mc "I’m surprised she’s working for you. Especially you!"
     show sayonika at f22
     show natsuki at t21
-    sm 2h "Yeah, me too. She’s been practically barred from you know who’s presence."
+    sm 2h "Yeah, me too. She’s been practically barred from the boss's presence."
     show natsuki at f21
     show sayonika at t22
     n 4bd "Right. It’s both a rehab program and eternal torture for her. Whatever, works for me!"
@@ -115,7 +115,7 @@ label ca3:
     sm 1i "I’m with him, so..."
     show sayonika at t22
     show natsuki at f21
-    n 3bd "Well, duh! He doesn’t have a clue about this bakery, anyways. What do you want?"
+    n 3bd "Well, duh! He doesn’t have a clue about the bakery, how would he manage to get here without you? ANyway, what did you want?"
     show sayonika at f22
     show natsuki at t21
     sm "Just a donut will do..."
@@ -200,16 +200,19 @@ label ca3:
     show natsuki at f21
     show sayonika at t22
     n 2bb "It is if you look at the fine print, Sayonie! The darn thing was in quotation marks!"
+    mc "Well, isn't Monika a little devil darling?"
+    n 5bz "Dannng! That's a good one, I need to write that down and save it for later!"
     show natsuki at t21
     "As Natsuki pulls something out of the oven, she cackles like a witch from something out of a movie." 
-    "A couple of other bakers join her in the cacklefest. Kinda freaky."
+    "A couple of other bakers join her in the cacklefest. Really, a spookfest more than anything."
     show natsuki at f21
     n 5bc "Don’t stress it, [player]." 
-    n "If it’s anything I’ve learned about this chica filet over here, she may have Monika’s brains, but it doesn’t ever pull through in the mornings." 
-    n 5bq "It’s almost like she goes braindead or something while she’s sleeping, and all of a sudden recovers midday!" 
+    n "If it’s anything I’ve learned about this chica filet over here, she may have Monika’s brains, but it never pulls through mornings." 
+    n 5bq "It’s almost like she goes braindead or something while she’s sleeping, and all of a sudden recovers midday after eating a donut from my bakery!" # Shameless plug lol
     n 5bc "Reminds me a lot of Sayori, too..."
-    mc "Well, isn’t Monika a little devil darling..."
-    n 4by "Damnnn! I can’t believe you’d actually call her that!"
+    mc "So you're saying Sayonika is Monika's stupid cousin?"
+    n 4by "Ooh burn!"
+    sm 1p "What?! I'm not stupid!!"
     "As Natsuki finishes the pastry with chocolate filling, Mio struts over sassily with the coffee in hand."
     show mio 5r at l31
     show natsuki at t32
@@ -228,15 +231,16 @@ label ca3:
     n "Perfect. Now continue your danishes."
     show mio at f31
     show natsuki at t32
-    mi 1v "Well, just let me know if you{nw}"
+    mi 1v "Well, just let me know if you{w=0.75}{nw}"
     $ _history_list[-1].what = "Well, just let me know if you—"
     show natsuki at f32
     show mio 5p at t31
     n "{b}You speak when spoken to, toots!{/b}"
     "A baker nearby chuckles before replying."
     b2 "Got it, JonTron!"
-    n 5bz "Finally! Someone who understands my intellectuals-only humor."
+    n 5bz "Finally! Someone who understands my intellectual humor."
     "She smiles intently as she looked at the both of us."
+    "Without saying a word, Mio slowly slips into the back storage, embarassed and probably angry."
     show mio at lhide
     hide mio
     show natsuki at t21
@@ -280,13 +284,13 @@ label ca3:
     "Suddenly, I remember the good times I’ve had with her." 
     "She was always calm, even when things got a bit intense." 
     "Luckily for us, she and Natsuki got along well after the spring break!" 
-    "Monika keeps tabs on her so that we don’t worry about her... eccentric hobbies."
+    "Monika now keeps tabs on her so that we don’t worry about her... eccentric hobbies."
     mc "Bad pun! Bad pun! No encore!"
     sm 3b "Ehehe~ she’s quite a gal!"
     mc "Don’t give me a heart attack, honestly... I thought she was being monitored to prevent this kind of stuff."
     sm 2q "Come on, you have to admit that was a good pun!"
     "Reluctantly, I follow Sayonika to the public library." 
-    "I don’t really know Sayonika well, despite the fact that we bumped into each other without thinking twice during spring break." 
+    "I didn't really know Sayonika well, despite the fact that we bumped into each other without thinking twice during spring break." 
     "However, Natsuki seems to be pretty comfortable with her." 
     "{i}Well, this will be a very, very interesting summer...{i}"
     return

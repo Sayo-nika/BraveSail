@@ -3,13 +3,15 @@ label ca4:
     scene bg library_out
     with wipeleft
     "We arrive at something called... the library."
-    "Still acting like a gentleman because apparently it’s what I do best, I gently open the door for Sayonika and enter."
+    "And me, still acting like a snobby gentleman because apparently it turned into my true personality, I gently open the door for Sayonika and enter."
     scene bg library_in
     with wipeleft
-    "Well hey, The library looks just like, well... like a library!"
-    "Lots of books, lots of tables, lots of bookshelves... I really can’t help but think about Yuri picking up an anatomy book and doing ‘you know what’... is that weird?"
-    "We proceed to walk towards the main counter where I spy someone I recognize..."
-    "It’s Yuri."
+    "Hey, the library looks just like, well... like a library."
+    "Mountains of books in the bookshelves and no one in sight..." 
+    "I really can’t help but think about Yuri picking up an anatomy book and doing the act..."
+    "We proceed to the main counter where I spy someone I recognize."
+    "Yuri."
+    "She glances at me, then at Sayonika."
     play music t6
     show yuri 1 at t11
     y 3bn "S-Sayonika? What are you doing here? I thought you said you didn’t like reading in here..."
@@ -20,9 +22,9 @@ label ca4:
     mc "More like acquaintance."
     sm 1i "Yeah... I suppose that’s a better way of putting it. We met each other earlier at the train station."
     sm 3b "He’s gonna stay with me for summer school."
-    "Yuri appears to look at me, trying to confirm what she is hearing."
+    "Yuri appears to look at me, trying to confirm what she hears."
     show sayonika at t22
-    mc "Yes, that’s right."
+    mc "Yes, that’s quite right."
     show sayonika at f22
     sm 1r "Is there something wrong Yuri?"
     show yuri at f21
@@ -32,18 +34,19 @@ label ca4:
     y 2ba "How may I help you?"
     show yuri at t21
     mc "Well, we were here to meet you."
-    mc "Though the last place I’d expect you to be working in is a library."
-    mc "So basically, Sayonika mentioned you’re going to summer school with us."
+    mc "Though the last place I would expect you to be working in is a library."
+    mc "Essentially, Sayonika mentioned you’re going to summer school with us."
     show yuri at f21
     y 2bq "O-oh. She did?"
     y 2bj "Well... it’s true that I {i}am{/i} going to summer school as well..."
     y 3bn "Not because I failed this year’s classes...!"
     y 4bb "That would be awful for my mental health..."
-    y 1bh "But because Monika made us come, what with that contract of hers..."
+    y 1bh "But because Monika forced us to come, what with that contract of hers..."
     show yuri at t21
-    mc "Guess I was part of that contract too..."
+    mc "And I guess I was a part of that contract too..."
     
-    "That reminds me..."
+    "That reminds me... hey, Yuri?"
+    show yuri 1be at t21
     menu:
         "Snitch on Sayonika.":
             $ sayonika_snitch = 1
@@ -51,7 +54,8 @@ label ca4:
 
         "Stay quiet.":
             $ sayonika_snitch = 0
-            mc "...it's nothing. So I was just thinking, Yuri. Do you get paid?"
+            y "Hm?"
+            mc "So I was just thinking, Yuri. Do you get paid?"
             show yuri at f21
             y 1bf "Yes, yes I do."
             mc "How much do they pay you?"
@@ -65,9 +69,8 @@ label ca4:
             show yuri at t21
             mc "....."
             mc "........."
-            mc "What?!"
-            "It takes me a few seconds to realize my mistake."
-            mc "Oh shit, I'm sorry! I didn't realise you still don't like that word!"
+            "It takes me a few seconds to realize."
+            mc "Oh shit, I'm sorry! I'm so, so sorry! I didn't know you still don't like that word!"
             mc "I'm really sorry!"
             show sayonika at f22
             sm 1p "[player]! Did you do that on purpose?!"
@@ -75,15 +78,15 @@ label ca4:
             sm "Stupid!! You shouldn't do that! You're so evil!"
             show sayonika at t22
             
-            mc "...well."
+            mc "Well..."
             menu:
                 "Break the silence and snitch.":
                     $ sayonika_snitch = 2
-                    mc "I wouldn't say I'm the evil one."
-                    mc "In fact! I should say that you're the evil one here."
+                    mc "I wouldn't say that {i}I{\i} am the evil one in this case."
+                    mc "In fact, I should say that you're the evil one right now!"
                     show sayonika at f22
-                    sm 1u "Huh?! Oh, wait a minuteee! I mean you're just bonkers!... {i}he's not buying it, is he...?{/i}"
-                    mc "Sorry, what was that? Oh yeah! I forgot to mention something, Yuri..."
+                    sm 1u "Huh?! Oh, wait a minuteee! I mean you're just so silly!... {i}he's not buying it, is he...?{/i}"
+                    mc "Sorry, what was that? Oh yeaah! I forgot to mention something, Yuri..."
                     jump sayonika_snitch_return
 
                 "Let it go and move on.":
@@ -93,39 +96,51 @@ label ca4:
                     pass
     
     label sayonika_snitch_return:
+        stop music fadeout 1.5
         mc "Sayonika made a {i}cutting{i} joke about you before we came."
+        play music t7
         show yuri at f21
         y 3bp "S-Sayonika!"
         show sayonika at f22
         show yuri at t21
         sm 1p "[player]!!"
         show sayonika at t22
-        "I shrug, because it's what she deserves."
+        "I smugly shrug her away, knowing I put her in an awkward position."
+        "But she deserves it, after all."
         show yuri at f21
-        y 2br "You know I hate those jokes, and they're really starting to get on my nerves..."
+        y 2br "You know I hate those jokes! T-they're really starting to get on my nerves..."
         show sayonika at f22
         show yuri at t21
         sm 2i "S-Sorry Yuri, I swear I’ll stop this time..."
-        "Stop 'this time?'"
+        "Stop {i}this time?{\i}"
         show yuri at f21
         show sayonika at t22
-        y 2br "This is the fifth time you’ve made one of those jokes..."
-        y 2bt "You always say you’ll stop but you never do..."
-        y 2br "How do I expect you to keep your word this time...?"
+        y 2br "This is the fifth time you’ve made one of those jokes this week!"
+        y 2bt "You always say you’ll stop, but you never do..."
+        y 2br "How do I expect you to keep your word this time?"
         show sayonika at f22
         show yuri at t21
         sm 1i "U-um... ehehe..."
         show yuri at f21
         show sayonika at t22
-        y 1bw "Fine... I’ll forgive you one more time."
-        y 1bg "If another one of those jokes comes out of your lips..."
+        y 1bw "Fine... I’ll forgive you, but this is your last chance."
+        y 1bg "But if I hear another one of those jokes coming out of your lips..."
+        y 1bg "Or if someone tells me you've made another one..."
         show sayonika 1x at h22
-        y 2by7 "I won’t hesitate to shove some soap into your filthy, disgusting, putrid mouth."
+        $ style.say_dialogue = style.edited
+        y 2by7 "I won’t hesitate to shove some soap into your filthy, disgusting, putrid mouth, you big bag of shit!"
+        y "I'll drown you in holy water! You deserve every ounce of bleach, every kilo of soap!"
+        y "Every!{w=1.0} Single!{w=1.0} Bit!"
+        $ style.say_dialogue = style.normal
+        "After that catastrophe and almost shoving soap down Sayonika's throat, she relaxes."
         pass
 
+    stop music fadeout 1.5
     y 1be "Ahm... apart from that, what books should I get you two?"
     show yuri at t21
+    show sayonika 1k at t22
     mc "I would like... hm..."
+    play music t8
     show yuri at f21
     y 1bb "Wait. I think I know of a book you two might like."
     show yuri at t21
@@ -135,8 +150,9 @@ label ca4:
     y "It’s a short read so it will be a little easier for you to read along."
     show yuri at t21
     "I take a look at the book’s cover."
-    "It reads {i}Go the Fuck to Sleep{/i} by Adam Mansbach."
-    mc "Thanks Yuri. This definitely looks like a must-read for my kind.."
+    "The first sentence I can see is {i}\"Go the Fuck to Sleep.\"{/i}"
+    "I am not disappointed."
+    mc "Thanks Yuri. This definitely does look like a must-read..."
     show yuri at f21
     y 3bc "I’m glad."
     y 1bb "As for you, Sayonika..."
@@ -170,14 +186,14 @@ label ca4:
     y 1bg "Come on, I’m sure you already know about how dense [player] is by now."
     show yuri at t21
     mc "{i}I’m not dense! Hmph!{/i}"
-    "I think I’m slowly turning into a tsundere."
+    "I notice my tsundere tone and blush in embarrassment."
     show yuri at f21
     y 2bt "Sorry, I meant you’re not familiar with reading books. I remember when you told me that novel books are your mortal enemy because they lack pictures."
     y 2br "What did you expect me to do? Give him a biography? Give him some geography?"
     y 1bv "He’s too new to read something without pictures to go along with the words."
     y 1bw "And he wouldn't possibly know how to answer the questions in Monika’s Summer Reading Test Papers if I gave him something different."
     show yuri at t21
-    "Are you calling me a child? Ow, my feelings..."
+    "Are you calling me a child? Ow, my feelings...!"
     show sayonika at f22
     sm 2p "But this doesn’t explain why I have to read a textbook while he gets to read a short story!"
 
@@ -220,7 +236,7 @@ label ca4:
         mc "Where could she be right now though?"
         show yuri at f21
         show sayonika at t22
-        y 1bf "I did see her come in here to run some errands, and then left. I think she was heading... south maybe?"
+        y 1bf "I did see her come in here to run some errands, and then left. I think she was heading... south possibly?"
         mc "Well, I guess we should go and find her then!"
         show yuri at t21
         
@@ -255,13 +271,12 @@ label ca4:
     sm 1i "Eheh..."
     sm "Uhmm..."
     sm 1o "I guess... I c-can...?"
-    mc "Haha, success!"
-    "I can’t believe she just agreed to read me Go the Fuck to Sleep tonight!"
-    "Doing this will definitely help me find out more about who Sayonika is as a person."
-    "But there’s no way I can stop now, there must be more I can do to improve this!"
-    "I have to stretch the dough as far as it goes if I can, by showing her the book and telling her about how I’m about to ‘going the fuck to sleep’ so she can read me it."
-    "I love it! It’s so devilish yet funny at the same time!"
+    "I roll in excitement and laughter as she gives me the thumbs up."
+    "I know that doing this will definitely help me find out more about who Sayonika is as a person."
+    "But there is no way I can stop now, for there are ways to go further!"
+    "I must stretch the dough as far as it goes, by showing her the book and telling her about how I’m about to ‘going the fuck to sleep’ so she can read me it."
+    "Delightfully devilish, Seymour!"
     mc "Thanks Sayonika! You’re the greatest!"
     show sayonika 1i at t11
-    "This day just keeps on getting better and better~"
+    "The day continues to get better and better as time advances."
     return
