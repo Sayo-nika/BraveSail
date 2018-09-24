@@ -34,7 +34,7 @@ label start:
         call ca1
         call ca2
         call ca3
-        call 
+        call ca4
         scene black
         call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
     else:
