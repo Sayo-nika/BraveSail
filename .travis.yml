@@ -21,7 +21,7 @@ install:
     # we're copying over the template files into the renpy SDK
     # and CD into the renpy
     
-    - bash ./quickstart-oss/setup.sh
+    - bash ./koizumi/setup.sh
     
     # Remove README.html to prevent errors.
     - rm -rf travis-quickstart/koizumi/README.html && cp -vRf quickstart-oss/koizumi/* mod/
