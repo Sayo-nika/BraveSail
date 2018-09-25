@@ -24,7 +24,7 @@ install:
     - bash ./koizumi/setup.sh
     
     # Remove README.html to prevent errors.
-    - rm -rf travis-quickstart/koizumi/README.html && cp -vRf quickstart-oss/koizumi/* mod/
+    - rm -rf koizumi/README.html && cp -vRf koizumi/* mod/
     
     - cd renpy
 
