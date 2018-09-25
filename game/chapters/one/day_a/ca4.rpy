@@ -82,7 +82,7 @@ label ca4:
             menu:
                 "Break the silence and snitch.":
                     $ sayonika_snitch = 2
-                    mc "I wouldn't say that {i}I{\i} am the evil one in this case."
+                    mc "I wouldn't say that {i}I{/i} am the evil one in this case."
                     mc "In fact, I should say that you're the evil one right now!"
                     show sayonika at f22
                     sm 1u "Huh?! Oh, wait a minuteee! I mean you're just so silly!... {i}he's not buying it, is he...?{/i}"
@@ -97,7 +97,7 @@ label ca4:
     
     label sayonika_snitch_return:
         stop music fadeout 1.5
-        mc "Sayonika made a {i}cutting{i} joke about you before we came."
+        mc "Sayonika made a {i}cutting{/i} joke about you before we came."
         play music t7
         show yuri at f21
         y 3bp "S-Sayonika!"
@@ -112,7 +112,7 @@ label ca4:
         show sayonika at f22
         show yuri at t21
         sm 2i "S-Sorry Yuri, I swear I’ll stop this time..."
-        "Stop {i}this time?{\i}"
+        "Stop {i}this time?{/i}"
         show yuri at f21
         show sayonika at t22
         y 2br "This is the fifth time you’ve made one of those jokes this week!"
