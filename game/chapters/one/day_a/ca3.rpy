@@ -292,5 +292,5 @@ label ca3:
     "Reluctantly, I follow Sayonika to the public library." 
     "I didn't really know Sayonika well, despite the fact that we bumped into each other without thinking twice during spring break." 
     "However, Natsuki seems to be pretty comfortable with her." 
-    "{i}Well, this will be a very, very interesting summer...{i}"
+    "{i}Well, this will be a very, very interesting summer...{/i}"
     return
