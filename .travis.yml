@@ -24,7 +24,7 @@ install:
     - bash ./quickstart-oss/setup.sh
     
     # Remove README.html to prevent errors.
-    - rm -rf travis-quickstart/sample_mod/README.html && cp -vRf quickstart-oss/sample_mod/* mod/
+    - rm -rf travis-quickstart/koizumi/README.html && cp -vRf quickstart-oss/koizumi/* mod/
     
     - cd renpy
 
