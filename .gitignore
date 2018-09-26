@@ -120,3 +120,6 @@ game/*.rpyc
 # AliceOS-specific files
 game/*.apf
 game/*.moj
+
+# Alice but a hyperbolic angle's crap
+run.sh

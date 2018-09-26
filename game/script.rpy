@@ -11,10 +11,16 @@ label start:
     $ _dismiss_pause = config.developer
 
     # girl names
-    $ s_name = "Sayori"
-    $ m_name = "Monika"
-    $ n_name = "Natsuki"
-    $ y_name = "Yuri"
+    python:
+        s_name = "Sayori"
+        m_name = "Monika"
+        n_name = "Natsuki"
+        y_name = "Yuri"
+        sm_name = "Sayonika"
+        mi_name = "Mio"
+        b_name = "Baker 1"
+        b2_name = "Baker 2"
+
 
     $ quick_menu = True
     $ style.say_dialogue = style.normal
@@ -23,10 +29,18 @@ label start:
     $ config.allow_skipping = True
 
 
-    if persistent.example_seen:
-        call tutorial_selection
+    if persistent.playthrough == 0:
+        $ chapter = 1
+        call ca1
+        call ca2
+        call ca3
+        call ca4
+        scene black
+        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
     else:
-        call example_chapter from _call_example_chapter
+        scene black with dissolve_scene_full
+        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
+        pass
 
     return
 
