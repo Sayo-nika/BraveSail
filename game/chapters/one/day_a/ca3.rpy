@@ -289,8 +289,8 @@ label ca3:
     sm 3b "Ehehe~ she’s quite a gal!"
     mc "Don’t give me a heart attack, honestly... I thought she was being monitored to prevent this kind of stuff."
     sm 2q "Come on, you have to admit that was a good pun!"
-    "Reluctantly, I follow Sayonika to the public library." 
-    "I didn't really know Sayonika well, despite the fact that we bumped into each other without thinking twice during spring break." 
-    "However, Natsuki seems to be pretty comfortable with her." 
-    "{i}Well, this will be a very, very interesting summer...{/i}"
+    "Reluctantly, I follow Sayonika to the public library. Maybe I should snitch on Sayori." 
+    "But I don't really know Sayonika well. Maybe Yuri enjoys her stupid jokes." 
+    "Natsuki seemed to be quite comfortable with her around." 
+    "{i}This will be a very interesting summer...{/i}"
     return
