@@ -115,7 +115,7 @@ label ca3:
     sm 1i "I’m with him, so..."
     show sayonika at t22
     show natsuki at f21
-    n 3bd "Well, duh! He doesn’t have a clue about the bakery, how would he manage to get here without you? ANyway, what did you want?"
+    n 3bd "Well, duh! He doesn’t have a clue about the bakery, how would he manage to get here without you? Anyway, what did you want?"
     show sayonika at f22
     show natsuki at t21
     sm "Just a donut will do..."
