@@ -6,7 +6,7 @@ pulls:
 
 issues:
 # enable for issues
-  perform: true
+  perform: false
 # issues with these labels will be considered. Set to `[]` to disable for issues
   labels:
     - help wanted
