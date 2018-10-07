@@ -5,7 +5,7 @@ pulls:
 #  comment:
 
 issues:
-# enable for issues
+# set to true to enable for issues
   perform: false
 # issues with these labels will be considered. Set to `[]` to disable for issues
   labels:
