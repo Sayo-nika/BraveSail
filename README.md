@@ -1,4 +1,4 @@
-# Doki Doki Endless Adventure! (Codename Koizumi)
+# Doki Doki Endless Adventure! (Codename BraveSail)
 A community-driven, open-ended Doki Doki Literature Club Mod.
 
 ![Sample screenshot](https://media.discordapp.net/attachments/474123291079081986/493820633810206730/screenshot0001_9-24-2018.png)
@@ -17,3 +17,7 @@ AliceOS is provided under the [GNU GPL v3 License by the Project Alice Team](htt
 
 ## Encountering `ACT_FAULT_IN_NONACT_AREA`?
 That's where you come in! We need _you_, the community, to write the next act. Get to it!
+
+## But why is it named BraveSail
+
+Because the perpetrator of the project loves HoneyWorks, so this is a nod to them and TrySail as well.
