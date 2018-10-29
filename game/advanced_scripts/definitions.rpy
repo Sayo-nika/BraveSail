@@ -1395,3 +1395,6 @@ default sayori_confess = True
 
 # We read Natsuki's confession poem in chapter 23.
 default natsuki_23 = None
+
+default sayonika_snitch = None
+default slap_sayonika = None
