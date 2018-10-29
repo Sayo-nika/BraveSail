@@ -226,7 +226,7 @@ label ca4:
                 y 1ba "See you two later!"
                 $ slap_sayonika = True
         
-        if slap_sayonika = True:
+        if slap_sayonika == True:
             sm "W-what was thaaat for?!"
             mc "For the shitty joke."
             sm "Okay, I'll admit it... I deserve it..."
