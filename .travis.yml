@@ -6,7 +6,7 @@ sudo: required
 
 # Travis build script for RenPy
 # based on Monika-After-Story script.
-  
+
 # This is the install stage
 # All your dependencies go here. We have done the RenPy SDK part done for you.
 
@@ -20,15 +20,15 @@ install:
     # now this is where it gets interesting
     # we're copying over the template files into the renpy SDK
     # and CD into the renpy
-    
-    - bash ./koizumi/travis/setup.sh
-    
+
+    - bash ./BraveSail/travis/setup.sh
+
     # Remove README.html to prevent errors.
-    - rm -rf koizumi/README.html && cp -vRf koizumi/* mod/
-    
-    - bash koizumi/travis/inject_version.sh
-    
-    
+    - rm -rf BraveSail/README.html && cp -vRf BraveSail/* mod/
+
+    - bash BraveSail/travis/inject_version.sh
+
+
     - cd renpy
 
 
