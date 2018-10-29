@@ -35,14 +35,10 @@ label start:
         call ca2
         call ca3
         call ca4
-        scene black
-        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
-    else:
-        scene black with dissolve_scene_full
-        call screen ThrowASError(error_type="ACT_FAULT_IN_NONACT_AREA")
-        pass
 
-    return
+    if persistent.playthrough == 1:
+
+        return
 
 label endgame(pause_length=4.0):
     $ quick_menu = False
