@@ -1,7 +1,7 @@
 label ca3:
     # TODO: Replace this with bakery background
     stop music fadeout 0.5
-    scene bg bakery_midday
+    scene bg plaza_day
     with wipeleft
     play music t3
     "We sprint all the way to a bakery."
@@ -17,7 +17,7 @@ label ca3:
     n "Well, you two better get inside and catch your breaths before we talk to each other, I don’t wanna burn you guys out!"
     "We walk inside slowly, breathing heavily."
     #new scene, to the bakery
-    BG: Inside Bakery (Mid-day)
+    scene bg bakery_midday
     "A few moments pass before I finally catch my breath. I notice the walls lined with croissants, cinnamon buns, apple pies and more. A paradise..."
     "MADE IN HEAVEN"
     mc "Woah...this place...it smells like pure sugar!"
