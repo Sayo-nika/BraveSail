@@ -59,5 +59,5 @@ label ca2:
     mc "I’ll take that as a no."
     "I wonder about how in the world she was able to get here without bringing any money at all." 
     "But I let that slip on my mind and let her lead me to a bakery." 
-    "I#m really hoping she doesn't mistake me for her own personal ATM."
+    "I'm really hoping she doesn't mistake me for her own personal ATM."
     return
