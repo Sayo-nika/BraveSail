@@ -143,7 +143,7 @@ label ca4:
         show yuri at t21
         mc "Guess I got the easy book to read then."
         show sayonika at f22
-        sm 2v "Wait, whaat? No fair!
+        sm 2v "Wait, whaat? No fair!"
         sm 2x "Why do I have to read a 500 page textbook about a coding language while [player] gets a little book with short stories about how he can go the heck to sleep?!"
         show yuri at f21
         show sayonika at t22
