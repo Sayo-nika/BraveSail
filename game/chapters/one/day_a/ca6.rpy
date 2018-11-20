@@ -1,5 +1,8 @@
 
 label ca6:
+    scene bg kitchen
+    with wipeleft_scene
+    play music t6
     #scene bg sayonikabedroom
     #with dissolve_scene_full
     "It's early in the evening when we finally make it back to Sayonika's dorm."
