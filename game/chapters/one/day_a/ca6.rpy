@@ -42,7 +42,7 @@ label ca6:
     with wipeleft_scene
     "I walk up the stairs sluggishly as I head to the bedroom."
     "I arrive at the door and walk in, getting into bed while taking my clothes off."
-    if sayonika_read == True:
+    if read_sayonika == True:
         "Then out of the blue, I remember what Sayonika said she’d do. I mean sure, it wasn’t a promise, but avoiding it would be a sign of untrustworthiness... "
         mc "SAYOOONIKAAAA!! YOU HAVE TO READ ME THAT BOOK YOU SAID YOU’D REEAD!"
         sm "DO I HAAAAVE TO?!!"
