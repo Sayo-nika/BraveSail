@@ -7,8 +7,11 @@ label ca5:
     "We continue walking and end up in a park near Sayori’s house."
     "I look around and notice a sitting little bun on a bench."
     "Sayori is having a tea party with her cow."
+    show sayori 2bd at f11 zorder 2
     "I tap Sayonika’s shoulder and point towards Sayori, before I pull her with me by her cuff."
-    sm "Ack!"
+    sm 1x "Ack!"
+    show sayonika at thide
+    hide sayonika
     "I creep up to Sayori as she’s pouring some tea into a cup."
     "I tap her on the shoulder and she drops the teapot onto the table, almost spilling it."
     show sayori 1bp at t11 zorder 2
@@ -28,9 +31,9 @@ label ca5:
     "Sayori moves up and I drop my rear onto the bench to sit down."
     "She grabs the teapot and looks at Sayonika and me."
     s 1bx "Do you want some tea, my fellow friends?"
-    mc "Woah, is this Posh Sayonika peeking through the cracks?!"
+    mc "Woah, is this Posh Sayonika seeping through the cracks?!"
     s 1bl "Umm...no..."
-    show sayori at s11
+    show sayori 1bl at s11
     s "Ehehe..."
     mc "Hm...have you ever noticed how much you \"ehehe\"? In fact, it’s almost like..."
     mc "You and Sayonika are the same person..."
@@ -109,7 +112,7 @@ label ca5:
     "This is not fine."
     mc "Totally...fine..."
     show sayori at f21
-    s 1bh "L-L-Let me go get you a tissue!!"
+    s 1bh "L-Let me go get you a towel!!"
     show sayori at thide
     hide sayori
     show sayonika at t11
@@ -199,7 +202,7 @@ label ca5:
     with wipeleft
     "We all shake hands with each other before I follow Sayonika home."
     "But not before getting asked a question just before we left."
-    show sayonika 1b at t11 zorder 2
+    show sayonika 2q at t11 zorder 2
     sm "Sooo...you like her, don't you~?"
     mc "Keeping walking or I'll superglue that mouth shut..."
     return

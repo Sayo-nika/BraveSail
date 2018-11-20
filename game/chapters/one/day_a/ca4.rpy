@@ -18,10 +18,10 @@ label ca4:
     show yuri at t21
     show sayonika 2b at f22
     sm "Ehehe... well..."
-    sm 4e "I was just showing someone around the city, sooo I decided to come over with him to the library: my good friend [player]!"
+    sm 5a "I was just showing someone around the city, sooo I decided to come over with him to the library: my good friend [player]!"
     mc "More like acquaintance."
     sm 1i "Yeah... I suppose that’s a better way of putting it. We met each other earlier at the train station."
-    sm 3b "He’s gonna stay with me for summer school."
+    sm 4b "He’s gonna stay with me for summer school."
     "Yuri appears to look at me, trying to confirm what she hears."
     show sayonika at t22
     mc "Yes, that’s quite right."
@@ -143,7 +143,8 @@ label ca4:
         show yuri at t21
         mc "Guess I got the easy book to read then."
         show sayonika at f22
-        sm 1v "Wait, whaat? No fair! Why do I have to read a 500 page textbook about a coding language while [player] gets a little book with a short story about how he can go the heck to sleep?!"
+        sm 2v "Wait, whaat? No fair!
+        sm 2x "Why do I have to read a 500 page textbook about a coding language while [player] gets a little book with short stories about how he can go the heck to sleep?!"
         show yuri at f21
         show sayonika at t22
         y 2br "Sayonika! Shhh...!"
@@ -185,12 +186,12 @@ label ca4:
             show sayonika at t22
             mc "Come on, you two... Sayonika, we need to find Sayori now."
             show sayonika at f22
-            sm 2i "Oh yeaaah. I forgot!"
+            sm 3i "Oh yeaaah. I forgot!"
             mc "What did you forget?"
             sm 1b "I forgot about Sayori, we still need to check on her!"
             mc "Now that I think about it... why exactly didn't you check beforehand?"
             sm 1i "Um... I didn't think about that."
-            mc "Hello; Sayonika's Brain? This is [player] asking you to think harder!"
+            mc "Hello; Sayonika's Brain? This is [player], asking you to work harder!"
             sm 1x "Uwaa~! I'm sorry!"
             show sayonika at t22
             mc "I'm kidding. Let's go, then!"
@@ -227,6 +228,8 @@ label ca4:
                 $ slap_sayonika = True
         
         if slap_sayonika == True:
+            scene bg library_out
+            with wipeleft
             sm "W-what was thaaat for?!"
             mc "For the shitty joke."
             sm "Okay, I'll admit it... I deserve it..."

@@ -25,7 +25,7 @@ label ca3:
     scene bg bakery
     with wipeleft_scene
     "A few moments pass before I finally catch my breath. I notice the walls lined with croissants, cinnamon buns, apple pies and more. A paradise..."
-    "MADE IN HEAVEN"
+    "『Made in Heaven』"
     mc "Woah...this place...it smells like pure sugar!"
     show natsuki at f21
     n 1bl "We have all of the baking goods you’ll ever need!"
@@ -43,10 +43,10 @@ label ca3:
     n 1bk "She always does it, so I’ve just made it a daily habit."
     n 1bt "Eventually I’m just gonna put a free sample outside for Sayonika to eat..."
     show natsuki at t21
-    show sayonika at f22
-    sm 1i "Ehehe..."
+    show sayonika at s22
+    sm 5c "Ehehe..."
     sm "I just love this place! The food is so good!"
-    show sayonika at t22
+    show sayonika 1a at t22
     show natsuki at f21
     n 5bh "Come on...it’s nothing but an average, ordinary bakery...sheesh."
     show natsuki at t21
@@ -80,7 +80,7 @@ label ca3:
     n 2bf "Listen here, my friends have come to say hello, so if you don't get your butt over to the truck and unload it without me, I'll fire you on the spot! Understood?!"
     show mio at f31
     show natsuki at t32
-    mi 8u "YES, MADAM!" #Natsuki is not a Guy! Edited because cringe
+    mi 8u "YES, MA'AM!"
     show mio at thide
     hide mio
     show natsuki at t21
