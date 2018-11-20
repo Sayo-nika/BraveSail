@@ -18,7 +18,7 @@ label ca4:
     show yuri at t21
     show sayonika 2b at f22
     sm "Ehehe... well..."
-    sm 5a "I was just showing someone around the city, sooo I decided to come over with him to the library: my good friend [player]!"
+    sm 3a "I was just showing someone around the city, sooo I decided to come over with him to the library: my good friend [player]!"
     mc "More like acquaintance."
     sm 1i "Yeah... I suppose that’s a better way of putting it. We met each other earlier at the train station."
     sm 4b "He’s gonna stay with me for summer school."

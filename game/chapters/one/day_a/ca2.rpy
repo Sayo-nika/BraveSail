@@ -50,7 +50,7 @@ label ca2:
     "Oh boy... I’m pretty sure I just offended a girl... time to pray to Hirohiko Araki hoping I won’t butcher my words with the filth of a thousand dumpyards."
     mc "I’m just not used being with a girl, let alone a whole season..."
     "She pulls out a smirk and winks."
-    sm 5b "Ahaha~! Let’s make your summer more interesting, then!"
+    sm 3b "Ahaha~! Let’s make your summer more interesting, then!"
     mc "At least take me out to dinner first."
     sm 1b "Alright, you look famished already per se, let’s go grab a bite!"
     mc"Are you paying...?"

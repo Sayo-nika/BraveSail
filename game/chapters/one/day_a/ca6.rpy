@@ -3,7 +3,7 @@ label ca6:
     stop music fadeout 2.0
     scene bg kitchen
     with wipeleft_scene
-    play music t6l
+    play music t6
     "It's early in the evening when we finally make it back to Sayonika's dorm."
     "My legs ache in waves of pain like an unstable electric current surging through cables."
     mc "Oww..."
@@ -24,7 +24,7 @@ label ca6:
     mc "Okay, fineeee!"
     mc "Your apartment looks so hot I could burst."
     sm 1n ".....F"
-    sm 5a "Thank you for the compliment~!"
+    sm 3a "Thank you for the compliment~!"
     mc "Heh."
     sm 1g "So how'd you ever get involved with the literature club, [player]?"
     mc "Hey, wait a sec! I should be asking YOU the question here!"
@@ -32,7 +32,7 @@ label ca6:
     mc "Long story short, I sold my soul for a cupcake."
     mc "How about you?"
     sm 1i "I don’t remember! It’s been a while and I’m too sleepy~!..."
-    mc "{i}*yawn*{\i}"
+    mc "{i}*yawn*{/i}"
     mc "Ugh...same, I think I'm ready to hit the hay...point me to my room, would ya?"
     "Sayonika points towards the staircase."
     sm 1a "Up the stairs, you’ll see the bed sign on the door when you get to the door."

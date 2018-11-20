@@ -44,7 +44,7 @@ label ca3:
     n 1bt "Eventually I’m just gonna put a free sample outside for Sayonika to eat..."
     show natsuki at t21
     show sayonika at s22
-    sm 5c "Ehehe..."
+    sm 3c "Ehehe..."
     sm "I just love this place! The food is so good!"
     show sayonika 1a at t22
     show natsuki at f21
