@@ -20,6 +20,7 @@ label start:
         mi_name = "Mio"
         b_name = "Baker 1"
         b2_name = "Baker 2"
+        mrc_name = "Mr Cow"
 
 
     $ quick_menu = True
@@ -35,6 +36,8 @@ label start:
         call ca2
         call ca3
         call ca4
+        call ca5
+        call ca6
 
     if persistent.playthrough == 1:
 
